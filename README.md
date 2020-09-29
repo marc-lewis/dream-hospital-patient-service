@@ -1,6 +1,6 @@
-# TypeScript + Serverless Framework Bootstrap Project
+# Dream Hopsital - Patient Service
 
-Bootstrap project for all serverless projects written in TypeScript
+The Patient Service handles the API for the hospital front of house (register, queue, doctor)
 
 ## Technologies Used
 
