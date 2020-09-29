@@ -4,8 +4,7 @@ module.exports = {
   resetModules: true,
   restoreMocks: true,
   roots: [
-    '<rootDir>/src/',
-    '<rootDir>/tests/'
+    '<rootDir>/src/'
   ],
   testEnvironment: 'node',
   verbose: true,

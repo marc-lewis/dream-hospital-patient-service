@@ -1,8 +1,8 @@
-hello:
-  handler: src/handlers/hello.handler
+register:
+  handler: src/handlers/register.handler
   environment:
     stage: ${self:custom.environment.stage}
   events:
     - http:
         method: get
-        path: hello
+        path: register

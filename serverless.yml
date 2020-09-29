@@ -11,7 +11,7 @@ plugins:
   - serverless-pseudo-parameters
   - serverless-webpack
   - serverless-newrelic-lambda-layers
-  
+
 provider:
   name: aws
   runtime: nodejs12.x
@@ -21,7 +21,7 @@ provider:
     ${file(config/role-statements/common.yml)}
 
 functions:
-  - ${file(config/functions/hello.yml)}
+  - ${file(config/functions/register.yml)}
 
 resources:
   - ${file(config/resources/api-gateway.yml)}

@@ -1,8 +1,8 @@
-import { hello } from '@/handlers/hello'
+import { register } from '@/handlers/register'
 
-describe('Complete Checkout Function', () => {
+describe('Register Function', () => {
   it('should return dummy message', async () => {
-    const response = await hello()
+    const response = await register()
     const body = JSON.parse(response.body)
 
     expect(response.statusCode).toBe(200)

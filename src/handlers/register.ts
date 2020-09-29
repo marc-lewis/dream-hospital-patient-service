@@ -7,7 +7,7 @@ import { APIGatewayProxyResult } from 'aws-lambda'
  *
  * @returns Promise<APIGatewayProxyResult>
  */
-async function hello (): Promise<APIGatewayProxyResult> {
+async function register (): Promise<APIGatewayProxyResult> {
   return {
     statusCode: 200,
     body: JSON.stringify({
@@ -17,15 +17,15 @@ async function hello (): Promise<APIGatewayProxyResult> {
 }
 
 /**
- * Wrapping hello function with middlewares using middy.
+ * Wrapping register function with middlewares using middy.
  *
  * @see https://github.com/middyjs/middy
  */
-const handler = middy(hello)
+const handler = middy(register)
   .use(jsonBodyParser())
   .use(httpEventNormalizer())
 
 export {
   handler,
-  hello
+  register
 }
