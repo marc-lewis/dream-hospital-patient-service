@@ -52,6 +52,7 @@
   },
   "dependencies": {
     "middy": "0.36.0",
-    "source-map-support": "0.5.19"
+    "source-map-support": "0.5.19",
+    "swagger-ui": "3.35.1"
   }
 }
